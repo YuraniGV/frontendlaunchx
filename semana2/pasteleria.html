@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rustic Bakery</title>
+</head>
+<body>
+
+    <h1>Pastelería de dulce tradición</h1>
+    <h2>PASTELES</h2>
+    <label for="pasteles">Eliga el pastel de su preferencia</label>
+    <select id="pasteles" name="pasteles">
+        <option value="ópera">Ópera $350</option>
+        <option value="cheesecake">Cheesecake $250</option>
+        <option value="chocolate">Chocolate $200</option>
+        <option value="imposible">Imposible $280</option>
+    </select>
+
+    <h2>Adornos y precios</h2><br>
+    <input type="checkbox" id="topping1" name="topping1" value="laminaschoco">
+    <label for="topping1">Láminas de Chocolate $100</label><br>
+    <input type="checkbox" id="topping2" name="topping2" value="rosasbetun">
+    <label for="topping2">Rosas de Betún $200</label><br>
+    <input type="checkbox" id="topping3" name="topping3" value="frutosrojos">
+    <label for="topping3">Frutos Rojos $300</label><br><br>
+
+    <h2>Sabores</h2><br>
+    <input type="checkbox" id="topping1" name="topping1" value="vainilla">
+    <label for="topping1">Vainilla</label><br>
+    <input type="checkbox" id="topping2" name="topping2" value="cafe">
+    <label for="topping2">Café</label><br>
+    <input type="checkbox" id="topping3" name="topping3" value="limon">
+    <label for="topping3">Limón</label><br><br>
+    
+    <h2>Ganache de preferencia</h2>
+    <label for="ganache">Elige tu ganache favorito</label><br>
+    <input list="ganache">
+    <datalist id="ganache">
+        <option value="Chocolate Blanco">
+        <option value="Nutella">
+        <option value="Chocolate Amargo">
+    </datalist>
+    <br><br>
+
+    <!-- Formularios -->
+    <h2>Introduzca su pedido</h2>
+    <form action="/accion.js" id="form1" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre"><br><br>
+        <label for="telefono">Teléfono:</label>
+        <input type="text" id="telefono" name="telefono" form="form1"><br><br>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" form="form1"><br><br>
+        <input type="submit" value="Submit">
+        <input type="reset">
+    </form>
+    
+    <footer>
+        <p>Dirección: Calle 10, Av. 08. Núm. 93, Col.Ignacio Zaragoza, Del. Venustiano Carranza, C.P.0011 </p>
+        <p>Teléfono: 55 8182 8384</p>
+        <p>Horarios de Atención: Lunes a Domingo de 7:00 hrs. a 22:00 hrs. </p>
+    </footer>
+    
+</body>
+</html>
